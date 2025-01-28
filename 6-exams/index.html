@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scissor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container nav_bar">
+        <img src="./assets/images/logo.svg" alt="logo" />
+        <div class="nav_links_wrapper close" id="navMenuContainer">
+          <ul class="nav_links">
+            <li><a href="#" class="link_primary">My Url</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <ul class="nav_links">
+            <li><a href="#" class="link_primary">Login</a></li>
+            <li><a href="#" class="link_btn">Try for Free</a></li>
+          </ul>
+        </div>
+        <button id="toggleMenu" class="toggle_nav_btn">
+          <i class="fa-solid fa-bars" id="openMenuBtn"></i>
+          <!-- <i class="fa-solid fa-xmark" id="closeMenuBtn"></i> -->
+        </button>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+      <article class="container hero_container">
+        <h2 class="title">
+          Optimize Your Online Experience with Our <br />
+          Advanced
+          <span class="title_em"
+            >URL Shortening
+            <img src="./assets/images/title-underline.svg" alt="-"
+          /></span>
+          Solution
+        </h2>
+        <p>
+          Personalize your shortened URLs to align with your brand identity.
+          Utilize custom slugs, branded links, and domain customization options
+          to reinforce your brand presence and enhance user engagement.
+        </p>
+        <div class="hero_cta">
+          <a href="#" class="link_btn">Sign Up</a>
+          <a href="#" class="link_primary">Learn More</a>
+        </div>
+        <div class="hero_footer">
+          <div class="hero_footer_frame">
+            <div class="links_container">
+              <img
+                src="./assets/images/hero-links.svg"
+                alt="Hero Link"
+                class="links"
+              />
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <img src="./assets/images/link-single.svg" alt="Single Links" />
+            </div>
+            <p>
+              Seamlessly transform your long URLs into concise and shareable
+              links with just few clicks.
+            </p>
+          </div>
+          <img
+            src="./assets/images/hero-frame-img.png"
+            alt="Frame"
+            class="link-frame"
+          />
+        </div>
+      </article>
+    </section>
+    <div class="hero__footer__img">
+      <img src="./assets/images/hero-footer-img.svg" alt="Hero" />
+    </div>
+    <section class="possibilities">
+      <article class="container possibilities_container">
+        <h2 class="title">One Stop.<br />Four <span>Possibilities</span>.</h2>
+        <div class="posibilities_options">
+          <div class="possibility__option">
+            <h2>3M</h2>
+            <p>Active Users</p>
+          </div>
+          <div class="possibility__option">
+            <h2>60M</h2>
+            <p>Links & QR codes created</p>
+          </div>
+          <div class="possibility__option">
+            <h2>1B</h2>
+            <p>Clicked & Scanned connections</p>
+          </div>
+          <div class="possibility__option">
+            <h2>300k</h2>
+            <p>App Integrations</p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
