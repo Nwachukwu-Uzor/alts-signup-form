@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="page__container">
+      <article class="info__section">
+        <img src="./assets/logo.svg" alt="logo" />
+        <h2>For Individuals</h2>
+        <p>
+          Start benefiting from the wellness experience. For companies looking
+          on increasing productivity, and improving organization wellness.
+        </p>
+      </article>
+      <form class="sign__up__form">
+        <div class="input__container">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            required
+            placeholder="First Name"
+          />
+        </div>
+        <div class="input__container">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+            placeholder="Last Name"
+          />
+        </div>
+        <div class="input__container">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="">Select here</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div class="input__container">
+          <label for="dateOfBirth">Date of Birth</label>
+          <input type="date" id="dateOfBirth" name="dateOfBirth" required />
+        </div>
+        <div class="input__container">
+          <label for="weight">Weight (KG)</label>
+          <input
+            type="number"
+            id="weight"
+            name="weight"
+            required
+            placeholder="Enter Weight"
+          />
+        </div>
+        <div class="input__container">
+          <label for="height">Height (CM)</label>
+          <input
+            type="number"
+            id="height"
+            name="height"
+            required
+            placeholder="Enter height here"
+          />
+        </div>
+        <div class="input__container input__full">
+          <label for="activityLevel">Activity Level</label>
+          <select id="activityLevel" name="activityLevel">
+            <option value="">Select here</option>
+          </select>
+        </div>
+        <div class="input__container input__full">
+          <label for="password">Password</label>
+          <div class="input__with__icon">
+            <input type="password" id="password" name="password" required />
+            <img src="/assets/show.svg" class="end__icon" alt="end icon" >
+          </div>
+        </div>
+        <button class="input__full">Register</button>
+        <p class="input__full">
+          By clicking Register, you agree to our
+          <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+        </p>
+      </form>
+    </section>
+  </body>
+</html>

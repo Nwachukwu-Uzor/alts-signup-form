@@ -1,0 +1,56 @@
+:root {
+    --border-radius: 0.35rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2.5rem 1.5rem;
+  border-radius: var(--border-radius);
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.card__title {
+  background-color: #ff1493;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  width: 80%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+}
+
+.card__title h2 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.card__content {
+  margin-top: 2rem;
+}
+
+.card__content p {
+  line-height: 1rem;
+  font-weight: 300;
+}
