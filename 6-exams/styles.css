@@ -75,6 +75,7 @@ a.link_btn_primary:hover {
 
 .header {
   position: relative;
+  background: linear-gradient(to right, #efefe4 0%, #f7fcfb 100%);
 }
 
 .nav_bar {
@@ -148,6 +149,7 @@ a.link_btn_primary:hover {
   .nav_links {
     width: 100%;
     flex-direction: row;
+    gap: 20px;
   }
 }
 
@@ -191,6 +193,10 @@ a.link_btn_primary:hover {
   }
 }
 
+.nav_links a i {
+  font-size: 10px;
+}
+
 .toggle_nav_btn {
   background-color: transparent;
   color: var(--primary-color);
@@ -204,12 +210,13 @@ a.link_btn_primary:hover {
 
 /* Hero Section */
 .hero {
-  margin-top: 50px;
+  padding-block: 50px;
+  background: linear-gradient(to right, #efefe4 0%, #f7fcfb 100%);
 }
 
 @media (min-width: 768px) {
   .hero {
-    margin-top: 100px;
+    padding-top: 80px;
   }
 
   .hero_container {
@@ -252,11 +259,12 @@ a.link_btn_primary:hover {
 }
 
 .hero_footer {
-  max-width: 450px;
+  max-width: 600px;
   margin-left: auto;
   margin-block: 2rem;
   position: relative;
   z-index: 100;
+
 }
 
 .hero_footer_frame {
@@ -278,7 +286,7 @@ a.link_btn_primary:hover {
   padding: 20px;
 }
 
-.hero_footer .link-frame {
+.hero_footer .link_frame_img {
   position: absolute;
   left: 0;
   top: -10px;
