@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WP Pusher</title>
+    <link rel="stylesheet" href="../6-exams/reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container nav_bar">
+        <img src="./assets/logo.svg" alt="Logo" />
+        <div class="nav_links_wrapper close" id="navMenuContainer">
+          <ul class="nav_links">
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Learn More</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#" class="outlined">Account</a></li>
+          </ul>
+        </div>
+        <button id="toggleMenu" class="toggle_nav_btn">
+          <i class="fa-solid fa-bars" id="openMenuBtn"></i>
+          <!-- <i class="fa-solid fa-xmark" id="closeMenuBtn"></i> -->
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero_section">
+        <article class="container main_container">
+          <form class="main_form">
+            <h2 class="title">Checkout</h2>
+            <div class="form_section">
+              <h4 class="title">
+                <span class="circle_number">1</span> Your Basic Information
+              </h4>
+              <div class="form_inputs">
+                <div class="input_container">
+                  <label for="firstName" class="input_label">First Name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="input_container">
+                  <label for="lastName" class="input_label">Last Name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Lat Name"
+                  />
+                </div>
+                <div class="input_container full">
+                  <label for="email" class="input_label">Email</label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    class="incomplete"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form_section">
+              <h4 class="title">
+                <span class="circle_number">2</span> Your Payment Information
+              </h4>
+              <label for="cardNumber" class="input_label">Card Number</label>
+              <div action="" class="form_inputs full_form">
+                <div class="input_container input_triple">
+                  <input
+                    type="text"
+                    id="cardNumber"
+                    placeholder="Card Number"
+                    class="cardNumber"
+                  />
+                  <div class="input_double">
+                    <input
+                      type="text"
+                      placeholder="MM/YY"
+                    />
+                    <input placeholder="CVV" class="cvv" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form_footer">
+              <button class="submit_btn">Buy WP Pusher</button>
+              <p>
+                <span class="circle_number">?</span>
+                <a href="#">Need any help?</a>
+                <span class="text">Don’t hesitate to contact support</span>
+              </p>
+            </div>
+          </form>
+          <div class="main_benefits">
+            <h4>Freelancer</h4>
+            <h3 class="pricing">
+              <sup class="sup">$</sup>
+              99
+              <sub class="sub">/year</sub>
+            </h3>
+            <p><i>Automatically renews after 1 year</i></p>
+            <ul class="benefits_list">
+              <li class="benefit">
+                <i class="fa-regular fa-circle-check"></i> Use on
+                <strong>5</strong> client sites
+              </li>
+              <li class="benefit">
+                <i class="fa-regular fa-circle-check"></i> Private Repositories
+              </li>
+              <li class="benefit">
+                <i class="fa-regular fa-circle-check"></i> Email Support
+              </li>
+            </ul>
+            <p>Need <strong>20</strong> client sites?</p>
+            <a href="#" class="benefits_action_link"
+              >Switch to the agency plan</a
+            >
+            <div class="testimonial">
+              <p>
+                <i
+                  >FTP is horrible to deal with.
+                  <strong>WP Pusher</strong> solves that issue, and the customer
+                  support is awesome!</i
+                >
+              </p>
+              <div class="avatar_container">
+                <img src="./assets/testimonial-avatar.svg" alt="Testimonial" />
+                <h4>Kirk Beard</h4>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
