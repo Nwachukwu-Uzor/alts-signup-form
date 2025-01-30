@@ -741,8 +741,17 @@ a.link_btn_primary:hover {
 .footer_svg_left {
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 0;
   max-height: 80%;
+  transform: translateY(-20%);
+}
+
+@media (min-width: 768px) {
+  .footer_svg_left {
+    top: auto;
+    bottom: 0;
+    transform: translateY(0);
+  }
 }
 
 .footer_svg_right {
